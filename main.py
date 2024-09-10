@@ -1,21 +1,22 @@
 import streamlit as st
 import importlib
-import sys
+import requests
+from io import BytesIO
 from PIL import Image, ImageDraw
 
 # Função para arredondar a imagem
 def make_rounded(image):
-        image = image.convert("RGBA")
-        mask = Image.new('L', image.size, 0)
-        draw = ImageDraw.Draw(mask)
-        width, height = image.size
-        radius = min(width, height) // 2
-        center = (width // 2, height // 2)
-        draw.ellipse([center[0] - radius, center[1] - radius, center[0] + radius, center[1] + radius], fill=255)
-        mask = mask.convert("L")
-        rounded_image = Image.new("RGBA", image.size)
-        rounded_image.paste(image, (0, 0), mask=mask)
-        return rounded_image
+    image = image.convert("RGBA")
+    mask = Image.new('L', image.size, 0)
+    draw = ImageDraw.Draw(mask)
+    width, height = image.size
+    radius = min(width, height) // 2
+    center = (width // 2, height // 2)
+    draw.ellipse([center[0] - radius, center[1] - radius, center[0] + radius, center[1] + radius], fill=255)
+    mask = mask.convert("L")
+    rounded_image = Image.new("RGBA", image.size)
+    rounded_image.paste(image, (0, 0), mask=mask)
+    return rounded_image
 
 # Função para mostrar o conteúdo da página selecionada
 def show_page(page_name):
@@ -47,15 +48,18 @@ page = st.sidebar.selectbox(
 
 # Exibe o conteúdo da página selecionada ou a página inicial
 if page == "Início":
-
-    
-
     # Carrega a imagem e aplica a função para torná-la arredondada
-    image = Image.open('https://github.com/BrunoMeloSlv/portifolio/blob/main/BrunoMelo.JPG?raw=true')
+    url = 'https://github.com/BrunoMeloSlv/portifolio/blob/main/BrunoMelo.JPG?raw=true'
+    response = requests.get(url)
+    image = Image.open(BytesIO(response.content))
+
+    # Arredondar a imagem
     rounded_image = make_rounded(image)
 
     # Exibe a imagem arredondada
     st.image(rounded_image, caption="Bruno Melo", use_column_width=False, width=150)
+    
+    # Exibe o texto de introdução
     st.title("Portfólio de Análise de Dados")
     st.write("""
     Sou Bruno Melo, Especialista em Data Science e Power BI, com uma jornada que combina formação acadêmica de excelência e experiência prática para transformar dados em soluções estratégicas e impactantes.
@@ -93,4 +97,3 @@ if page == "Início":
     """)
 else:
     show_page(page)
-
