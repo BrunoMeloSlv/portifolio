@@ -32,7 +32,7 @@ Execute o aplicativo localmente:
 
 Copiar código
 streamlit run app.py
-Acesse o aplicativo em http://localhost:8501 no seu navegador.
+Acesse o aplicativo em https://brunomelo.streamlit.app/ no seu navegador.
 
 Imagem de Perfil Arredondada
 Uma das características interessantes deste projeto é o uso de uma função que arredonda a imagem de perfil. Isso é feito utilizando a biblioteca Pillow para criar uma máscara circular sobre a imagem e, assim, exibi-la de forma estilizada.
