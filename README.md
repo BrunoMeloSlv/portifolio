@@ -24,12 +24,12 @@ git clone https://github.com/BrunoMeloSlv/portifolio.git
 
 Instale as dependências necessárias:
 
-bash
+
 Copiar código
 pip install -r requirements.txt
 Execute o aplicativo localmente:
 
-bash
+
 Copiar código
 streamlit run app.py
 Acesse o aplicativo em http://localhost:8501 no seu navegador.
