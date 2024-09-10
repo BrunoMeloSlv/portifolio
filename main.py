@@ -51,7 +51,7 @@ if page == "Início":
     
 
     # Carrega a imagem e aplica a função para torná-la arredondada
-    image = Image.open('BrunoMelo.jpg')
+    image = Image.open('https://github.com/BrunoMeloSlv/portifolio/blob/main/BrunoMelo.JPG?raw=true')
     rounded_image = make_rounded(image)
 
     # Exibe a imagem arredondada
