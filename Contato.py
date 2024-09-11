@@ -21,8 +21,8 @@ def run():
     st.markdown(f'<a href="{youtube_url}" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/174/174883.png" width="24"/> YouTube: @DataScienceBM</a>', unsafe_allow_html=True)
 
     # WhatsApp
-    whatsapp_url = "https://wa.me/seu_numero_whatsapp"
-    st.markdown(f'<a href="{whatsapp_url}" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" width="24"/> WhatsApp: @seu_numero_whatsapp</a>', unsafe_allow_html=True)
+    whatsapp_url = "https://wa.me/61991744560"
+    st.markdown(f'<a href="{whatsapp_url}" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" width="24"/> WhatsApp: (61) 9 9174-4560 </a>', unsafe_allow_html=True)
 
     # GitHub
     github_url = "https://github.com/BrunoMeloSlv"
