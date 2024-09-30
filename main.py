@@ -60,7 +60,7 @@ if page == "Início":
     st.image(rounded_image, caption="Bruno Melo", use_column_width=False, width=150)
     
     # Exibe o texto de introdução
-    st.title("Portfólio")
+    st.title("Portfólio de Análise de Dados")
     st.write("""
     Sou Bruno Melo, Especialista em Data Science e Power BI, com uma jornada que combina formação acadêmica de excelência e experiência prática para transformar dados em soluções estratégicas e impactantes.
 
