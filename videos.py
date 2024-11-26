@@ -8,12 +8,14 @@ def run():
 
     with col1:
         st.markdown("""
+            <iframe width="350" height="197" src="https://www.youtube.com/embed/SoT8nKb-R38" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
             <iframe width="350" height="197" src="https://www.youtube.com/embed/UnslpMJm0sI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
             <iframe width="350" height="197" src="https://www.youtube.com/embed/kCN6Rtupy0s" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
         """, unsafe_allow_html=True)
 
     with col2:
         st.markdown("""
+            <iframe width="350" height="197" src="https://www.youtube.com/embed/YkzwEA4DSuQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
             <iframe width="350" height="197" src="https://www.youtube.com/embed/3enyJoD2kUk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
             <iframe width="350" height="197" src="https://www.youtube.com/embed/eO0pfs0gTTc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
         """, unsafe_allow_html=True)
@@ -32,6 +34,7 @@ def run():
 
     with col2:
         st.markdown("""
+            <iframe width="350" height="197" src="https://www.youtube.com/embed/ievLc2kqCu8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
         """, unsafe_allow_html=True)
 
     st.write("---")
@@ -43,6 +46,7 @@ def run():
 
     with col1:
         st.markdown("""
+            <iframe width="350" height="197" src="https://www.youtube.com/embed/kfg9uGXQCfg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
             <iframe width="350" height="197" src="https://www.youtube.com/embed/bfXWgrhYTYc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
             <iframe width="350" height="197" src="https://www.youtube.com/embed/F4qx5XoSOKE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
             <iframe width="350" height="197" src="https://www.youtube.com/embed/xTeqIYqSITU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
@@ -53,4 +57,5 @@ def run():
             <iframe width="350" height="197" src="https://www.youtube.com/embed/BdbwJvPuuYM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
             <iframe width="350" height="197" src="https://www.youtube.com/embed/LcqodKPqgTs" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
             <iframe width="350" height="197" src="https://www.youtube.com/embed/ZbJrLlGzxJA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <iframe width="350" height="197" src="https://www.youtube.com/embed/OdRhHc1vQ8M" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
         """, unsafe_allow_html=True)
